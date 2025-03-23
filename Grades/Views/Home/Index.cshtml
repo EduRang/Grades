@@ -1,0 +1,33 @@
+﻿@model List<Subject>
+
+<h2>Lista de Materias</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay materias disponibles.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subject in Model)
+            {
+                <tr>
+                    <td>@subject.Id</td>
+                    <td>@subject.Name</td>
+                    <td>
+                        <a asp-controller="Subjects" asp-action="Edit" asp-route-id="@subject.Id" class="btn btn-warning">Editar</a>
+                        <a asp-controller="Subjects" asp-action="Delete" asp-route-id="@subject.Id" class="btn btn-danger">Borrar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
