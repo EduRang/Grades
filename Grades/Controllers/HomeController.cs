@@ -1,30 +1,31 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Grades.Models;
 
-namespace Grades.Controllers;
-
-public class HomeController : Controller
-{
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+namespace Grades.Controllers {
+    public class HomeController : Controller
     {
-        _logger = logger;
-    }
+        private readonly ILogger<HomeController> _logger;
 
-    public IActionResult Index()
-    {
-        // Obtén la lista predeterminada de materias
-        var subjects = Subject.DefaultSubjects;
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
 
-        // Pasa la lista a la vista
-        return View(subjects);
-    }
+        public IActionResult Index()
+        {
+            var model = new IndexViewModel
+            {
+                Subjects = Subject.DefaultSubjects,
+                Activities = Activity.DefaultActivities
+            };
+            
+            return View(model);
+        }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View();
+        }
     }
 }

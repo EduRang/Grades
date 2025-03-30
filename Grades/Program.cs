@@ -27,6 +27,12 @@ app.MapControllerRoute(
     pattern: "{controller=Subjects}/{action=Index}/{id?}",
     defaults: new { controller = "Subjects" });
 
+// Ruta personalizada para SubjectsController
+app.MapControllerRoute(
+    name: "activities",
+    pattern: "{controller=Activities}/{action=Index}/{id?}",
+    defaults: new { controller = "Activities" });
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")

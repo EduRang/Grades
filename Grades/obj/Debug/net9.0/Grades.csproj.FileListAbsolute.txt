@@ -17,7 +17,6 @@ D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\ne
 D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\scopedcss\bundle\Grades.styles.css
 D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\scopedcss\projectbundle\Grades.bundle.scp.css
-D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\compressed\xm1a6gxxiy-b9sayid5wm.gz
 D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\compressed\8ni6hezm4p-61n19gt1b8.gz
 D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\compressed\ajf0gfl2bs-xtxxf3hu2r.gz
 D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\compressed\w2uje5l78j-bqjiyaj88i.gz
@@ -95,3 +94,5 @@ D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\ne
 D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\Grades.pdb
 D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\Grades.genruntimeconfig.cache
 D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\ref\Grades.dll
+D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\Grades.sourcelink.json
+D:\Eduardo Rangel\TecMilenio\6to semestre\Paginas web\Grades\Grades\obj\Debug\net9.0\compressed\xm1a6gxxiy-ys9dw70vbi.gz

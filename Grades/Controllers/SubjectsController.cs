@@ -1,6 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
 using Grades.Models;
 
 namespace Grades.Controllers
@@ -40,7 +38,7 @@ namespace Grades.Controllers
             return View(subject); // Si el modelo no es válido, muestra la vista de nuevo con errores
         }
 
-        // GET: Subjects/Edit/5
+        // GET: Subjects/Edit
         public IActionResult Edit(int id)
         {
             var subject = _subjects.FirstOrDefault(s => s.Id == id);
@@ -51,7 +49,7 @@ namespace Grades.Controllers
             return View(subject); // Devuelve la vista para editar el subject
         }
 
-        // POST: Subjects/Edit/5
+        // POST: Subjects/Edit
         [HttpPost]
         public IActionResult Edit(int id, Subject updatedSubject)
         {
@@ -71,7 +69,7 @@ namespace Grades.Controllers
             return View(updatedSubject); // Si el modelo no es válido, muestra la vista de nuevo con errores
         }
 
-        // GET: Subjects/Delete/5
+        // GET: Subjects/Delete
         public IActionResult Delete(int id)
         {
             var subject = _subjects.FirstOrDefault(s => s.Id == id);
@@ -82,7 +80,7 @@ namespace Grades.Controllers
             return View(subject); // Devuelve la vista para confirmar la eliminación
         }
 
-        // POST: Subjects/Delete/5
+        // POST: Subjects/Delete
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {

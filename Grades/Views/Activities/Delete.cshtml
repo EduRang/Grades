@@ -1,10 +1,10 @@
-@model Subject
+@model Activity
 
-<h2>Eliminar Materia</h2>
+<h2>Eliminar Actividad</h2>
 
-<h3>¿Estás seguro de que deseas eliminar esta materia?</h3>
+<h3>¿Estás seguro de que deseas eliminar esta actividad?</h3>
 <div>
-    <h4>@Model.Name</h4>
+    <h4>Actividad numero @Model.Id, de tipo @Model.Type</h4>
     <form asp-action="Delete" method="post">
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Eliminar" class="btn btn-danger" />
